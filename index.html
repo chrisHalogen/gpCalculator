@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Halogenic GP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>The Halogenic GP Calculator</h1>
+    <div class="inputDiv" id="inputDiv1">
+        <div class="introText">
+            <p>This Calculator will help you calculate your Grade point average for the current semester having supplied
+                it will adequate info on each courses taken for that semester</p>
+            <p>Kindly fill the form below to poceed.</p>
+        </div>
+        <div class="introText">
+            <form action="" id="form">
+                <center>
+                    <div> <span class="inputLabel">Course Title:</span> <br>
+                        <input type="text" name="title" id="title" placeholder="Enter The Course Title Here...">
+                    </div>
+                </center>
+                <div class="courseDiv">
+                    <div class="innerCourseDiv">
+                        <center>
+                            <span class="inputLabel">Course Code:</span> <br>
+                            <input type="text" name="code" placeholder="Enter Course Code" id="code">
+                        </center>
+                    </div>
+                    <div class="innerCourseDiv">
+                        <center>
+                            <span class="inputLabel">Course Unit:</span>
+                            <select name="unit" id="unit">
+                                <option value="null">Select Unit</option>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                            </select>
+                        </center>
+                    </div>
+                </div>
+                <div class="courseDiv">
+                    <div class="innerCourseDiv">
+                        <center>
+                            <span class="inputLabel">Course Score:</span>
+                            <input type="text" name="score" id="score" placeholder="Enter Score">
+
+                        </center>
+                    </div>
+                    <div class="innerCourseDiv">
+                        <center>
+                            <span class="inputLabel" id="addCourse">Click to Add Course</span>
+                            <button class="btnAddCourse" id="btnAddCourse">Add Course</button>
+                        </center>
+                    </div>
+                </div>
+            </form>
+            <div class="addedCourses" id="addedCourses">
+
+
+
+            </div>
+            <center>
+                <button class="btnCalc" id="btnCalc" >Show My GPA!!!</button>
+            </center>
+        </div>
+
+
+    </div>
+
+    <div id="outputDiv1" >
+        <div class="introText">
+            <center>
+                <h1>Summary of All Courses</h1>
+            </center>
+        </div>
+        <div class="introText">
+
+            <div class="addedCourses" id="summCourses">
+
+
+
+            </div>
+            <div class="addedCourses" id="resultDiv">
+                <center>
+
+                </center>
+            </div>
+            <center>
+                    <button id="calcAgain" class="btnCalcAgain">Calculate Again!!!</button>
+            </center>
+        </div>
+
+
+    </div>
+    <center>
+        <p style="color:white">Copyright2019@ChrisHalogen</p>
+    </center>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

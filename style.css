@@ -1,0 +1,407 @@
+body{
+    background-image: url("img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.introText p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.inputDiv{
+    width : 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.introText{
+    width : 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 3px solid black;
+    border-radius: 15px;
+    justify-content: center;
+}
+form input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 3px black solid;
+    background-color: rgba(88, 87, 87, 0.336);
+    color: black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+select{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 3px black solid;
+    background-color: rgba(88, 87, 87, 0.336);
+    color: black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputLabel{
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.courseDiv, .addedCourses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.innerCourseDiv{
+    width: 46%;
+    margin:2%;
+}
+.btnAddCourse, .btnCalc , .btnCalcAgain{
+    color: rgb(238, 255, 0);
+    background-color: black;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+.btnAddCourse:hover, .btnCalc:hover , .btnCalcAgain:hover{
+    color: rgb(74, 78, 16);
+    background-color: rgb(17, 17, 17);
+    
+}
+#addCourse{
+    font-size: 20px;
+    font-weight: 300;
+}
+.btnCalc, .btnCalcAgain{
+    width: 70%;
+    margin-bottom: 10px;
+}
+.addedCourses{
+    width: 98%;
+}
+.eachCourse{
+    width: 31%;
+    margin: 1%;
+    border: 1px white solid;
+}
+.eachCourse p, #summ{
+    margin:0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 20px;
+}
+.introText h1{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h2, #sun{
+    color:white;
+    text-align: center;
+    font-size:30px;
+}
+.gpaVal, #result{
+    margin: 0;
+    padding: 0;
+}
+.btnCalcAgain{
+    margin-top: 10px;
+}
+#outputDiv1{
+    width : 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.outputDiv{
+    display:flex;
+}
+@media (max-width:1043px){
+    .eachCourse p, #summ {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 18px;
+    }
+}
+@media (max-width:959px){
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 26px;
+    }
+}
+@media (max-width:919px){
+    .eachCourse{
+        width: 30%;
+        margin: 1%;
+        border: 1px white solid;
+    }
+}
+@media (max-width:819px){
+    .inputLabel{
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btnAddCourse, .btnCalc , .btnCalcAgain{
+        color: rgb(238, 255, 0);
+        background-color: black;
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+    .eachCourse p, #summ {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+@media (max-width:786px){
+    .inputDiv, .outputDiv{
+        width : 96%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0, 0, 0, 0.527);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border: 3px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btnAddCourse, .btnCalc , .btnCalcAgain{
+        color: rgb(238, 255, 0);
+        background-color: black;
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+    .introText{
+        width : 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 3px solid black;
+        border-radius: 15px;
+        justify-content: center;
+        
+    }
+    .inputLabel{
+        font-size: 32px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    form input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 28px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 28px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .eachCourse p, #summ {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 16px;
+    }
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+@media (max-width:717px){
+    .eachCourse{
+        width: 30%;
+        margin: 1%;
+        border: 1px white solid;
+    }
+    .inputLabel{
+        font-size: 29px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    form input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btnAddCourse, .btnCalc , .btnCalcAgain{
+        color: rgb(238, 255, 0);
+        background-color: black;
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+    .eachCourse p, #summ {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 16px;
+    }
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 23px;
+    }
+}
+@media (max-width:671px){
+    .inputLabel{
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    form input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border: 3px black solid;
+        background-color: rgba(88, 87, 87, 0.336);
+        color: black;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btnAddCourse, .btnCalc , .btnCalcAgain{
+        color: rgb(238, 255, 0);
+        background-color: black;
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+    .eachCourse p, #summ {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 22px;
+    }
+
+}
+@media (max-width:621px){
+    h2, #sun{
+        color:white;
+        text-align: center;
+    }
+    h2, #sun{
+        color:white;
+        text-align: center;
+        font-size: 21px;
+    }
+
+}
+@media (max-width:521px){
+    .inputLabel{
+        font-size: 26px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btnAddCourse, .btnCalc , .btnCalcAgain{
+        color: rgb(238, 255, 0);
+        background-color: black;
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        padding: 10px 30px;
+    }
+}
